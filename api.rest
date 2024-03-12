@@ -1,0 +1,27 @@
+GET http://api-ronda.test/api/test HTTP/1.1
+
+###
+POST http://api-ronda.test/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "mariaoliveira@email.com",
+    "password": "123"
+}
+###
+GET http://api-ronda.test/api/user HTTP/1.1
+Authorization: Bearer 6|NpkoDFJb8iLxOEBqZcCYfdrRSQXrmEidjR5o4fPK3b416888
+Accept: application/json
+content-type: application/json
+
+###
+
+DELETE  http://api-ronda.test/api/logout HTTP/1.1
+Authorization: Bearer 1|ENScmr1jxF0Ukeck9l0bMaV2k4UsJVFULRckOT0I09dfabe8
+content-type: application/json
+###
+
+GET http://api-ronda.test/api/routes HTTP/1.1
+Authorization: Bearer 2|Tjj2dRyJE7jifkxChPGYdtbBEnZbPo9nFwHT9nRbccac2406
+Accept: application/json
+content-type: application/json
